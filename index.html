@@ -56,8 +56,8 @@
         <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between relative">
             
             <!-- Left Empty Slot for Symmetric Balance (or Quick Links on PC) -->
-            <div class="w-20 hidden sm:block">
-                <a href="#new-drop" class="text-[11px] font-en uppercase tracking-widest text-neutral-500 hover:text-black transition-colors">COLLECTION</a>
+            <div class="w-max shrink-0 hidden sm:block">
+                <a href="#new-drop" class="inline-block whitespace-nowrap text-[11px] font-en uppercase tracking-widest text-neutral-500 hover:text-black transition-colors">COLLECTION</a>
             </div>
 
             <!-- Center Logo -->
@@ -74,7 +74,7 @@
                 <button id="search-btn" type="button" class="p-1.5 hover:opacity-60 transition-opacity" aria-label="검색창 열기">
                     <i data-lucide="search" class="w-4 h-4 md:w-5 md:h-5 stroke-[1.5]"></i>
                 </button>
-                <a href="#login" id="user-btn" class="p-1.5 hover:opacity-60 transition-opacity" aria-label="마이페이지">
+                <a href="https://sculptorpage.com/member/login.html" target="_blank" rel="noopener noreferrer" id="user-btn" class="p-1.5 hover:opacity-60 transition-opacity" aria-label="로그인 페이지 열기">
                     <i data-lucide="user" class="w-4 h-4 md:w-5 md:h-5 stroke-[1.5]"></i>
                 </a>
                 <button id="mobile-menu-btn" type="button" class="p-1.5 hover:opacity-60 transition-opacity" aria-label="메뉴 열기">
@@ -125,8 +125,8 @@
 
     <!-- Search Overlay Modal -->
     <div id="search-modal" class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 flex items-start justify-center pt-24 md:pt-32 px-4" aria-hidden="true">
-        <div class="bg-white w-full max-w-xl p-6 sm:p-8 shadow-2xl relative transform -translate-y-4 transition-transform duration-300">
-            <button id="close-search-btn" class="absolute top-6 right-6 text-neutral-400 hover:text-black p-1 transition-colors" aria-label="검색창 닫기">
+        <div class="bg-white w-full max-w-xl px-6 pb-6 pt-16 sm:px-8 sm:pb-8 sm:pt-16 shadow-2xl relative transform -translate-y-4 transition-transform duration-300">
+            <button id="close-search-btn" class="absolute top-5 right-6 sm:right-8 text-neutral-400 hover:text-black p-1 transition-colors" aria-label="검색창 닫기">
                 <i data-lucide="x" class="w-5 h-5 stroke-[1.5]"></i>
             </button>
             <div class="relative mt-2">
@@ -146,12 +146,12 @@
     </div>
 
     <!-- Main Content -->
-    <main>
+    <main class="pt-16 sm:pt-20">
 
         <!-- 1. Main Visual (Hero Visual - Seamless Match with Design Mockup) -->
-        <section class="main-visual relative w-full overflow-hidden bg-[#f8f8f8] flex items-center justify-center pt-16 sm:pt-20">
-            <div class="w-full max-w-[1240px] mx-auto hero-image-container overflow-hidden">
-                <img src="./images/hero_banner.png" alt="SCULPTOR FW Main Campaign Visual" class="w-full h-auto block object-cover object-top select-none hero-visual-img">
+        <section class="main-visual relative w-full overflow-hidden bg-[#f8f8f8] flex items-center justify-center">
+            <div class="w-full hero-image-container overflow-hidden">
+                <img src="./images/hero_banner.png" alt="SCULPTOR FW Main Campaign Visual" class="w-full h-full block object-cover object-center select-none hero-visual-img">
             </div>
         </section>
 
@@ -172,7 +172,8 @@
                         <div class="swiper-wrapper items-start">
 
                             <!-- Product 1: Velvet Zip-up Hood -->
-                            <div class="swiper-slide product-item text-center group cursor-pointer">
+                            <div class="swiper-slide product-item text-center group">
+                                <a href="https://sculptorpage.com/product/detail.html?product_no=14971&amp;cate_no=781&amp;display_group=1" target="_blank" rel="noopener noreferrer" class="block cursor-pointer" aria-label="상품 상세정보 새 탭에서 보기">
                                 <div class="product-img-box w-full aspect-[4/5] flex items-center justify-center mb-3 bg-[#fafafa] overflow-hidden rounded-sm transition-colors duration-300 group-hover:bg-[#f3f3f3]">
                                     <img src="./images/new_1.png" alt="Fur Velvet Zip-up Hood" class="max-h-[85%] max-w-[85%] object-contain mx-auto select-none transition-transform duration-500 ease-out group-hover:scale-105">
                                 </div>
@@ -184,10 +185,12 @@
                                         ₩139,000
                                     </p>
                                 </div>
+                                </a>
                             </div>
 
                             <!-- Product 2: Faux Fur Crop Jacket -->
-                            <div class="swiper-slide product-item text-center group cursor-pointer">
+                            <div class="swiper-slide product-item text-center group">
+                                <a href="https://sculptorpage.com/product/detail.html?product_no=14921&amp;cate_no=1&amp;display_group=2" target="_blank" rel="noopener noreferrer" class="block cursor-pointer" aria-label="상품 상세정보 새 탭에서 보기">
                                 <div class="product-img-box w-full aspect-[4/5] flex items-center justify-center mb-3 bg-[#fafafa] overflow-hidden rounded-sm transition-colors duration-300 group-hover:bg-[#f3f3f3]">
                                     <img src="./images/new_2.png" alt="Faux Fur Crop Jacket" class="max-h-[85%] max-w-[85%] object-contain mx-auto select-none transition-transform duration-500 ease-out group-hover:scale-105">
                                 </div>
@@ -199,10 +202,12 @@
                                         ₩169,000
                                     </p>
                                 </div>
+                                </a>
                             </div>
 
                             <!-- Product 3: Graphic Long Sleeve Top -->
-                            <div class="swiper-slide product-item text-center group cursor-pointer">
+                            <div class="swiper-slide product-item text-center group">
+                                <a href="https://sculptorpage.com/product/detail.html?product_no=15102&amp;cate_no=782&amp;display_group=1" target="_blank" rel="noopener noreferrer" class="block cursor-pointer" aria-label="상품 상세정보 새 탭에서 보기">
                                 <div class="product-img-box w-full aspect-[4/5] flex items-center justify-center mb-3 bg-[#fafafa] overflow-hidden rounded-sm transition-colors duration-300 group-hover:bg-[#f3f3f3]">
                                     <img src="./images/new_3.png" alt="Graphic Long Sleeve Top" class="max-h-[85%] max-w-[85%] object-contain mx-auto select-none transition-transform duration-500 ease-out group-hover:scale-105">
                                 </div>
@@ -214,10 +219,12 @@
                                         ₩68,000
                                     </p>
                                 </div>
+                                </a>
                             </div>
 
                             <!-- Product 4: Cross Sequin Shoulder Bag -->
-                            <div class="swiper-slide product-item text-center group cursor-pointer">
+                            <div class="swiper-slide product-item text-center group">
+                                <a href="https://sculptorpage.com/product/detail.html?product_no=14948&amp;cate_no=801&amp;display_group=1" target="_blank" rel="noopener noreferrer" class="block cursor-pointer" aria-label="상품 상세정보 새 탭에서 보기">
                                 <div class="product-img-box w-full aspect-[4/5] flex items-center justify-center mb-3 bg-[#fafafa] overflow-hidden rounded-sm transition-colors duration-300 group-hover:bg-[#f3f3f3]">
                                     <img src="./images/new_4.png" alt="Cross Sequin Shoulder Bag" class="max-h-[85%] max-w-[85%] object-contain mx-auto select-none transition-transform duration-500 ease-out group-hover:scale-105">
                                 </div>
@@ -229,6 +236,7 @@
                                         ₩89,000
                                     </p>
                                 </div>
+                                </a>
                             </div>
 
                             <!-- Product 5 (Awaiting Image: new_5.png) -->
@@ -409,6 +417,7 @@
 
                             <!-- Best Item 1 -->
                             <div class="swiper-slide product-item text-center group cursor-pointer">
+                                <a href="https://sculptorpage.com/product/detail.html?product_no=15167&amp;cate_no=781&amp;display_group=1" target="_blank" rel="noopener noreferrer" class="block w-full h-full" aria-label="Best Seller 상품 1 상세 페이지 열기">
                                 <div class="product-img-box w-full aspect-[4/5] flex items-center justify-center mb-3 bg-[#fafafa] overflow-hidden rounded-sm transition-colors duration-300 group-hover:bg-[#f3f3f3]">
                                     <img src="./images/best_1.png" alt="Vintage Bomber Jacket Crop" class="max-h-[85%] max-w-[85%] object-contain mx-auto select-none transition-transform duration-500 ease-out group-hover:scale-105">
                                 </div>
@@ -420,10 +429,12 @@
                                         ₩178,000
                                     </p>
                                 </div>
+                            </a>
                             </div>
 
                             <!-- Best Item 2 -->
                             <div class="swiper-slide product-item text-center group cursor-pointer">
+                                <a href="https://sculptorpage.com/product/detail.html?product_no=15204&amp;cate_no=782&amp;display_group=1" target="_blank" rel="noopener noreferrer" class="block w-full h-full" aria-label="Best Seller 상품 2 상세 페이지 열기">
                                 <div class="product-img-box w-full aspect-[4/5] flex items-center justify-center mb-3 bg-[#fafafa] overflow-hidden rounded-sm transition-colors duration-300 group-hover:bg-[#f3f3f3]">
                                     <img src="./images/best_2.png" alt="Body Graphic Long Sleeve" class="max-h-[85%] max-w-[85%] object-contain mx-auto select-none transition-transform duration-500 ease-out group-hover:scale-105">
                                 </div>
@@ -435,10 +446,12 @@
                                         ₩72,000
                                     </p>
                                 </div>
+                            </a>
                             </div>
 
                             <!-- Best Item 3 -->
                             <div class="swiper-slide product-item text-center group cursor-pointer">
+                                <a href="https://sculptorpage.com/product/detail.html?product_no=13722&amp;cate_no=781&amp;display_group=1" target="_blank" rel="noopener noreferrer" class="block w-full h-full" aria-label="Best Seller 상품 3 상세 페이지 열기">
                                 <div class="product-img-box w-full aspect-[4/5] flex items-center justify-center mb-3 bg-[#fafafa] overflow-hidden rounded-sm transition-colors duration-300 group-hover:bg-[#f3f3f3]">
                                     <img src="./images/best_3.png" alt="Graffiti Oversized Hoodie" class="max-h-[85%] max-w-[85%] object-contain mx-auto select-none transition-transform duration-500 ease-out group-hover:scale-105">
                                 </div>
@@ -450,10 +463,12 @@
                                         ₩108,000
                                     </p>
                                 </div>
+                            </a>
                             </div>
 
                             <!-- Best Item 4 -->
                             <div class="swiper-slide product-item text-center group cursor-pointer">
+                                <a href="https://sculptorpage.com/product/detail.html?product_no=15003&amp;cate_no=784&amp;display_group=1" target="_blank" rel="noopener noreferrer" class="block w-full h-full" aria-label="Best Seller 상품 4 상세 페이지 열기">
                                 <div class="product-img-box w-full aspect-[4/5] flex items-center justify-center mb-3 bg-[#fafafa] overflow-hidden rounded-sm transition-colors duration-300 group-hover:bg-[#f3f3f3]">
                                     <img src="./images/best_4.png" alt="Two-tone Raw Cut Wide Denim" class="max-h-[85%] max-w-[85%] object-contain mx-auto select-none transition-transform duration-500 ease-out group-hover:scale-105">
                                 </div>
@@ -465,10 +480,12 @@
                                         ₩118,000
                                     </p>
                                 </div>
+                            </a>
                             </div>
 
                             <!-- Best Item 5 -->
                             <div class="swiper-slide product-item text-center group cursor-pointer">
+                                <a href="https://sculptorpage.com/product/detail.html?product_no=15082&amp;cate_no=801&amp;display_group=1" target="_blank" rel="noopener noreferrer" class="block w-full h-full" aria-label="Best Seller 상품 5 상세 페이지 열기">
                                 <div class="product-img-box w-full aspect-[4/5] flex items-center justify-center mb-3 bg-[#fafafa] overflow-hidden rounded-sm transition-colors duration-300 group-hover:bg-[#f3f3f3]">
                                     <img src="./images/best_5.png" alt="Silver Charm Pocket Hobo Bag" class="max-h-[85%] max-w-[85%] object-contain mx-auto select-none transition-transform duration-500 ease-out group-hover:scale-105">
                                 </div>
@@ -480,6 +497,7 @@
                                         ₩98,000
                                     </p>
                                 </div>
+                            </a>
                             </div>
 
                             <!-- Best Item 6 (Awaiting Image: best_6.png) -->
@@ -651,10 +669,10 @@
     </main>
 
     <!-- Footer (Exact Design Mockup Match) -->
-    <footer class="bg-[#dcdcdc] text-neutral-700 pt-10 pb-12 text-[10px] md:text-[11px] leading-relaxed border-t border-neutral-300">
+    <footer class="bg-[#dcdcdc] text-neutral-700 min-h-[150px] flex items-center py-8 text-[10px] md:text-[11px] leading-relaxed border-t border-neutral-300">
         <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
                 <!-- Left: Navigation Links -->
                 <div class="flex flex-wrap gap-x-4 sm:gap-x-5 gap-y-1 font-en uppercase text-neutral-800 tracking-wider">
                     <a href="#" class="hover:text-black transition-colors">NOTICE</a>

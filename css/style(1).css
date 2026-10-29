@@ -198,3 +198,18 @@ html.lenis, html.lenis body {
     opacity: 1;
 }
 
+
+/* Hero: full-width 1920 × 900 composition at desktop */
+.main-visual, .hero-image-container {
+    width: 100%;
+    height: 900px;
+}
+.hero-visual-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+@media (max-width: 767px) {
+    .main-visual, .hero-image-container { height: 60vw; min-height: 320px; }
+}
